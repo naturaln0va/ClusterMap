@@ -61,7 +61,6 @@ final class Node<AnnotationType: CoordinateIdentifiable> where AnnotationType: H
         }
 
         var foundAnnotations: [AnnotationType] = []
-        foundAnnotations.reserveCapacity(annotations.count)
 
         for annotation in annotations where targetRect.contains(annotation.coordinate) {
             foundAnnotations.append(annotation)

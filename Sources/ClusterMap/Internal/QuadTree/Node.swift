@@ -8,7 +8,7 @@
 import MapKit
 
 final class Node<AnnotationType: CoordinateIdentifiable> where AnnotationType: Hashable {
-    let maxPointCapacity = 8
+    let maxPointCapacity = 64
     let rect: MKMapRect
 
     var annotations: [AnnotationType] = []
